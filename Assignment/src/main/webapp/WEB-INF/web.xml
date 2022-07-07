@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         
+	<servlet>
+		<servlet-name>Studentinsert</servlet-name>
+		<servlet-class>com.ticket.StudentInsert</servlet-class>
+	</servlet>         
+    <servlet-mapping>
+    	<servlet-name>Studentinsert</servlet-name>
+    	<url-pattern>/insert</url-pattern>
+    </servlet-mapping>   
+
+     <servlet>
+         <servlet-name>updateanswer</servlet-name>
+         <servlet-class>com.ticket.UpdateAnswerServlet</servlet-class>
+     </servlet>   
+     <servlet-mapping>
+          <servlet-name>updateanswer</servlet-name>
+          <url-pattern>/updateans</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+          <servlet-name>deleteticket</servlet-name>
+          <servlet-class>com.ticket.RemoveTicketServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+           <servlet-name>deleteticket</servlet-name>
+           <url-pattern>/remove</url-pattern>
+     </servlet-mapping>
+     
+</web-app>
